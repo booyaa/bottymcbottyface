@@ -1,0 +1,6 @@
+[package]
+name = "bottymcbottyface"
+version = "0.1.0"
+authors = ["booyaa <booyaabooyaabooyaa@gmail.com>"]
+
+[dependencies]
