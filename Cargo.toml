@@ -1,6 +1,14 @@
 [package]
 name = "bottymcbottyface"
 version = "0.1.0"
-authors = ["booyaa <booyaabooyaabooyaa@gmail.com>"]
+authors = ["Mark Sta Ana <booyaabooyaabooyaa@gmail.com>"]
+description = "A collection of IRC bots"
+homepage = "https://github.com/booyaa/bottymcbottyface"
+repository = "https://github.com/booyaa/bottymcbottyface"
+documentation = "https://docs.rs/bottymcbottyface/"
+readme = "README.md"
+keywords = ["irc","bot","unicorns"]
 
 [dependencies]
+hiirc = "0.4"
+clap = "2.13"
