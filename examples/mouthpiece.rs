@@ -20,6 +20,7 @@ const APP_AUTHOR: &'static str = env!("CARGO_PKG_AUTHORS");
 const AD_BANNER: &'static str = concat!(env!("CARGO_PKG_NAME"),
                                         " v",
                                         env!("CARGO_PKG_VERSION"),
+                                        " - ",
                                         env!("CARGO_PKG_HOMEPAGE"));
 
 const DEFAULT_PORT: &'static str = "6667";
@@ -33,8 +34,6 @@ struct Mouthpiece<'a> {
 
 impl<'a> Mouthpiece<'a> {
     pub fn new(channel: &str, message: String) -> Mouthpiece {
-        // adds two more errors <'a> {
-        // pub fn new(channel: &str) -> Mouthpiece {
         Mouthpiece {
             channel: channel,
             message: message,
