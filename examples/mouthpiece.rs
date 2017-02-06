@@ -6,7 +6,7 @@ use std::sync::Arc;
 use hiirc::*;
 use clap::{Arg, App};
 
-// this code is largely inspired by the peekaboo example in hiirc.
+// this code is largely inspired (copied)  by the peekaboo example in hiirc.
 
 const APP_VERSION: &'static str = concat!("(",
                                           env!("CARGO_PKG_NAME"),
@@ -42,11 +42,6 @@ impl<'a> Mouthpiece<'a> {
 }
 
 impl<'a> Listener for Mouthpiece<'a> {
-    /// On any event we receive, print the Debug of it.
-    fn any(&mut self, _: Arc<Irc>, event: &Event) {
-        println!("{:?}", &event);
-    }
-
     /// When the welcome message is received, join the channel.
     fn welcome(&mut self, irc: Arc<Irc>) {
         irc.join(self.channel, None);

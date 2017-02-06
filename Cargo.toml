@@ -1,6 +1,6 @@
 [package]
 name = "bottymcbottyface"
-version = "0.1.2"
+version = "0.1.3"
 authors = ["Mark Sta Ana <booyaabooyaabooyaa@gmail.com>"]
 description = "A collection of IRC bots"
 homepage = "https://github.com/booyaa/bottymcbottyface"
